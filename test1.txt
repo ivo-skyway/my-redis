@@ -1,0 +1,15 @@
+GET foo
+BEGIN
+SET foo 100
+GET foo
+BEGIN
+SET foo 120
+GET foo
+BEGIN
+SET foo 150
+GET foo
+ROLLBACK
+COMMIT
+GET foo
+unset foo
+get foo

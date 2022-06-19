@@ -5,6 +5,10 @@
 *.so
 *.dylib
 
+.idea
+
+my-redis
+
 # Test binary, built with `go test -c`
 *.test
 
