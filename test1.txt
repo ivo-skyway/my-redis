@@ -2,14 +2,22 @@ GET foo
 BEGIN
 SET foo 100
 GET foo
+SET bar 222
+GET bar
+
 BEGIN
 SET foo 120
 GET foo
+
 BEGIN
 SET foo 150
 GET foo
+unset foo
 ROLLBACK
+
+unset bar
 COMMIT
 GET foo
 unset foo
 get foo
+GET bar
