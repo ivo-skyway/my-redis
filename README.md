@@ -6,7 +6,7 @@ See REQUIREMENTS.txt for the requirements
 
 # Installation
 
-Assuming working installation of Go 1.7 or 1.18, simply run 
+Assuming a working installation of Go 1.7 or 1.18 and source in the current directory, simply run 
 
 ```
 source run-me.sh
@@ -14,14 +14,14 @@ source run-me.sh
 
 The script will:
 
-1. run unit tests
-2. build my-redis binary
-3. execute my-redis with input from test1.txt
+1. Run unit tests;
+2. Build my-redis binary in the current directory;
+3. Execute my-redis with input from test1.txt file.
+
 
 ## Alternative installation (from github)
 
 ```
-# install from github
 go install github.com/ivo-skyway/my-redis@latest
 my-redis
 
@@ -33,8 +33,8 @@ cd my-redis
 ```
 
 ## Note: 
-Commands are case-insensitive - i.e. get and GET will work the same way,
-keys and values are case-sensitive.
+
+my-redis commands are case-insensitive - i.e. get and GET will work in the same way, while keys and values are case-sensitive.
 
 
 

@@ -69,6 +69,7 @@ func (stack *Stack) Exec(c string, key string, val string) (string, error) {
     // command dispatch
     // commands with keys are delegated to current top store
     // begin / commit / rollback change the stack / store state
+    // instead of switch we could use map string -> func
     switch c {
     case common.Get:
         return m.Get(key), nil

@@ -40,7 +40,7 @@ func NewParser() *parser {
 // It reads from standard input line by line, and parses each line for valid command
 // Current state contains command cmd (mandatory), optional key, and optional values
 // If there are errors in the current line the error is printed on stdout and the line is skipped.
-// If there are no errors the execution is delegated to the Stack object
+// otherwise the execution is delegated to the Stack object
 func (p *parser) Run() {
     var err error
     var res string
