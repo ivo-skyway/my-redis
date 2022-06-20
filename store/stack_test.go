@@ -7,15 +7,18 @@ import (
 )
 
 func TestStack(t *testing.T) {
+    
     s := NewStack()
     assert.NotNil(t, s)
     assert.Equal(t, 0, s.Len())
     assert.Nil(t, s.Top())
+
     m := NewStore()
     m.Set(key, val)
     s.Push(*m)
     assert.NotNil(t, s.Top())
     assert.Equal(t, 1, s.Len())
+    
     m2 := s.Pop()
     assert.NotNil(t, m2)
     assert.Equal(t, m.Get(key), m2.Get(key))

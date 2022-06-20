@@ -1,6 +1,8 @@
 # In Memory Database Test
 
-See REQUIREMENTS.txt for requirements
+my-redis is small exercise app simulating Redis set/get key-value store written in go.
+
+See REQUIREMENTS.txt for the requirements
 
 # Installation
 
@@ -19,6 +21,12 @@ The script will:
 ## Alternative installation (from github)
 
 ```
+# install from github
+go install github.com/ivo-skyway/my-redis@latest
+my-redis
+
+# or pull the source
+
 git clone https://github.com/ivo-skyway/my-redis.git
 cd my-redis
 ./run-me.sh

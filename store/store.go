@@ -5,8 +5,8 @@ import (
     "github.com/ivo-skyway/my-redis/common"
 )
 
-// Store is simple map string -> string
-// store is oblivious to transactions
+// Store is a simple map string -> string
+// it is oblivious to transactions (managed by Stack)
 type Store map[string]string
 
 // store state
